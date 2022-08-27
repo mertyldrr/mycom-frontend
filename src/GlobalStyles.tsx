@@ -12,6 +12,9 @@ const GlobalStyles = css`
     margin: 0px;
     padding: 0px;
   }
+  li {
+    list-style: none;
+  }
 `;
 
 export default GlobalStyles;
