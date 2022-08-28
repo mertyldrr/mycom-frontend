@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <Container>
-      <NavLink>Home</NavLink>
-      <NavLink>About</NavLink>
-      <NavLink>Contact</NavLink>
+      <NavigationLink to={"/"}>Home</NavigationLink>
     </Container>
   );
 };
@@ -19,10 +18,11 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const NavLink = styled.li`
+const NavigationLink = styled(NavLink)`
   font-weight: 900;
   color: white;
   font-size: 25px;
+  text-decoration: none;
 `;
 
 export default Navbar;
