@@ -8,11 +8,11 @@ const Homepage = () => {
       <Hello>hello!</Hello>
       <AboutMe>
         I'm Mert, an Informatics Master's student
-        <span style={{ color: "#3070b3" }}>@</span>
+        <span style={{ color: "#3070b3" }}> @</span>
         <Link href="https://www.tum.de/en/" target={"_blank"}>
           <TUM style={{ marginRight: 5 }} width={80} height={40} />
         </Link>
-        and part-time frontend developer
+        and part-time frontend developer{" "}
         <Link
           href="https://smokeless.world/"
           underline="none"
