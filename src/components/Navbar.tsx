@@ -1,10 +1,18 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
+import { ReactComponent as MyLogo } from "../assets/mylogo.svg";
 
 const Navbar = () => {
   return (
     <Container>
-      <NavigationLink to={"/"}>Home</NavigationLink>
+      <LeftContainer>
+        <NavLink to={"/"}>
+          <Logo />
+        </NavLink>
+      </LeftContainer>
+      <RightContainer>
+        <NavigationLink to={"/"}>Home</NavigationLink>
+      </RightContainer>
     </Container>
   );
 };
@@ -14,8 +22,18 @@ const Container = styled.div`
   background-color: #706fbb;
   height: 100px;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+`;
+
+const LeftContainer = styled.div`
+  display: flex;
+  flex-grow: 0.15;
+  padding-left: 100px;
+`;
+const RightContainer = styled.div`
+  display: flex;
+  flex-grow: 0.75;
+  justify-content: center;
 `;
 
 const NavigationLink = styled(NavLink)`
@@ -23,6 +41,11 @@ const NavigationLink = styled(NavLink)`
   color: white;
   font-size: 25px;
   text-decoration: none;
+`;
+
+const Logo = styled(MyLogo)`
+  width: 80px;
+  height: 80px;
 `;
 
 export default Navbar;
