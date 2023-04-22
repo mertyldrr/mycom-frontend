@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Global } from "@emotion/react";
 import GlobalStyles from "./GlobalStyles";
 import "./App.css";
+import PhotoGallery from "./components/PhotoGallery";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/photos" element={<PhotoGallery />}></Route>
       </Routes>
     </div>
   );
