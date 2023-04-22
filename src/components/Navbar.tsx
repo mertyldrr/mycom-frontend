@@ -12,6 +12,7 @@ const Navbar = () => {
       </LeftContainer>
       <RightContainer>
         <NavigationLink to={"/"}>Home</NavigationLink>
+        <NavigationLink to={"/photos"}>Photos</NavigationLink>
       </RightContainer>
     </Container>
   );
@@ -27,13 +28,13 @@ const Container = styled.div`
 
 const LeftContainer = styled.div`
   display: flex;
-  flex-grow: 0.15;
+  flex-grow: 0.35;
   padding-left: 100px;
 `;
 const RightContainer = styled.div`
   display: flex;
-  flex-grow: 0.75;
-  justify-content: center;
+  flex-grow: 0.45;
+  justify-content: space-around;
 `;
 
 const NavigationLink = styled(NavLink)`
