@@ -6,7 +6,7 @@ const PhotoGallery = () => {
   const [photos, setPhotos] = useState<{ url: string }[]>();
   const fetchData = async () => {
     const res = await axios.get(
-      `http://ec2-18-196-50-32.eu-central-1.compute.amazonaws.com/photos`
+      `http://ec2-18-196-8-56.eu-central-1.compute.amazonaws.com/photos`
     );
     setPhotos(res.data);
     console.log(res.data);
@@ -18,7 +18,7 @@ const PhotoGallery = () => {
   return (
     <div>
       {/* <Gallery images={IMAGES} backdropClosesModal={true} /> */}
-      {photos && photos.map((photo) => <img src={photo.url}></img>)}
+      {photos && photos.map((photo) => <img alt={""} src={photo.url}></img>)}
     </div>
   );
 };
