@@ -1,28 +1,24 @@
-import { Center, Flex } from "@chakra-ui/react";
-import Navbar from "./Navbar";
+import { Bio } from "./Bio";
 import { Education } from "./Education";
 import { Experience } from "./Experience";
+import Links from "./Links";
+import PhotoGallery from "./PhotoGallery";
+import { Projects } from "./Projects";
 
 const Homepage = () => {
   return (
-    <Center>
-      <Flex
-        flexDirection="column"
-        minWidth="max-content"
-        alignItems="center"
-        justifyContent="center"
-        width={"80%"}
-        borderWidth="1px"
-        borderRadius="lg"
-        bg="purple.700"
-      >
-        <Navbar />
-        <Flex w={"100%"} justifyContent={"space-around"}>
-          <Education />
-          <Experience />
-        </Flex>
-      </Flex>
-    </Center>
+    <div className="w-full h-full flex flex-col justify-center items-center p-10 bg-gray-200">
+      <div className="w-2/3 flex flex-col justify-center items-center p-8 mb-10 rounded-xl bg-gray-100">
+        <Bio />
+        <Education />
+        <Experience />
+      </div>
+      <div className="w-2/3 h-screen flex flex-col items-center rounded-xl bg-gray-100">
+        <Projects />
+        <Links />
+        <PhotoGallery />
+      </div>
+    </div>
   );
 };
 
