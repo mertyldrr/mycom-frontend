@@ -16,7 +16,7 @@ const Homepage = () => {
       <div className="w-2/3 h-screen flex flex-col items-center rounded-xl bg-gray-100">
         <Projects />
         <Links />
-        <PhotoGallery />
+        {/* <PhotoGallery /> */}
       </div>
     </div>
   );

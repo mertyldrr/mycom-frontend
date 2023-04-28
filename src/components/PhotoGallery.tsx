@@ -7,7 +7,6 @@ const PhotoGallery = () => {
   const fetchData = async () => {
     const res = await axios.get(`${process.env.REACT_APP_BASE_URL}\\photos`);
     setPhotos(res.data);
-    console.log(res.data);
   };
   useEffect(() => {
     fetchData();

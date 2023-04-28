@@ -17,7 +17,6 @@ export const Bio = () => {
   };
 
   useEffect(() => {
-    console.log("inside use effect");
     fetchProfilePicture();
     fetchPlLogos();
   }, []);
