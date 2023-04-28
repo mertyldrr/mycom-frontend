@@ -6,23 +6,21 @@ export const Bio = () => {
   const [icons, setIcons] = useState<S3Icons[]>();
   const [profilePicture, setProfilePictrue] = useState<S3Icons>();
   const fetchPlLogos = async () => {
-    const { data } = await axios.get(
-      `${process.env.REACT_APP_BASE_URL}\\plangicons`
-    );
-    setIcons(data);
+    const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/plangicons`);
+
+    setIcons(res.data);
   };
 
   const fetchProfilePicture = async () => {
-    const { data } = await axios.get(
-      `${process.env.REACT_APP_BASE_URL}\\photos`
-    );
-    setProfilePictrue(data[0]);
+    const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/photos`);
+    setProfilePictrue(res.data[0]);
   };
 
   useEffect(() => {
-    fetchPlLogos();
+    console.log("inside use effect");
     fetchProfilePicture();
-  });
+    fetchPlLogos();
+  }, []);
   return (
     <div className="w-full flex flex-col justify-center items-center p-4 mb-10 rounded-xl bg-gray-100">
       <div className="flex flex-row justify-center space-x-20">
@@ -43,8 +41,13 @@ export const Bio = () => {
       </div>
       <div className="w-2/3 flex flex-row justify-between items-center pt-12">
         {icons &&
-          icons.map((icon) => (
-            <img className="w-16 h-16 rounded-xl" src={icon.url} alt="" />
+          icons.map((icon, index) => (
+            <img
+              className="w-16 h-16 rounded-xl"
+              src={icon.url}
+              alt=""
+              key={index}
+            />
           ))}
       </div>
     </div>
