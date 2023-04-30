@@ -5,7 +5,9 @@ import { S3Icons } from "../types";
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState<S3Icons[]>();
   const fetchData = async () => {
-    const res = await axios.get(`${process.env.REACT_APP_BASE_URL}\\photos`);
+    const res = await axios.get(
+      `${process.env.REACT_APP_BACKEND_BASE_URL}\\photos`
+    );
     setPhotos(res.data);
   };
   useEffect(() => {

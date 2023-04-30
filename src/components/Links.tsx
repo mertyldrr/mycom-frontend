@@ -5,7 +5,9 @@ import { S3LinkIcons } from "../types";
 const Links = () => {
   const [logos, setLogos] = useState<S3LinkIcons[]>();
   const fetchLogos = async () => {
-    const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/icons`);
+    const res = await axios.get(
+      `${process.env.REACT_APP_BACKEND_BASE_URL}/icons`
+    );
     setLogos(res.data);
   };
   useEffect(() => {
