@@ -13,12 +13,12 @@ const Links = () => {
   }, []);
   return (
     <div className="w-full flex flex-col space-y-4 p-8 justify-center items-center mb-10">
-      <h1 className="text-lg font-mono font-bold">Links</h1>
-      <div className="w-2/3 flex flex-row justify-evenly items-center basis-40 ">
+      <h1 className="font-mono font-bold text-basis lg:text-lg">Links</h1>
+      <div className="w-full lg:w-2/3 flex flex-row justify-evenly items-center ">
         {logos &&
           logos.map((logo, index) => (
             <a href={logo.href} target="_blank" rel="noreferrer" key={index}>
-              <img className="w-16 h-16" src={logo.url} alt="" />
+              <img className="w-8 h-8 lg:w-16 lg:h-16" src={logo.url} alt="" />
             </a>
           ))}
       </div>

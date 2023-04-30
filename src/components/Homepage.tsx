@@ -2,18 +2,17 @@ import { Bio } from "./Bio";
 import { Education } from "./Education";
 import { Experience } from "./Experience";
 import Links from "./Links";
-import PhotoGallery from "./PhotoGallery";
 import { Projects } from "./Projects";
 
 const Homepage = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center p-10 bg-gray-200">
-      <div className="w-2/3 flex flex-col justify-center items-center p-8 mb-10 rounded-xl bg-gray-100">
+    <div className="w-full h-full flex flex-col justify-center items-center p-0 lg:p-10 bg-gray-200">
+      <div className="w-full lg:w-2/3 flex flex-col justify-center items-center p-8 mb-0 lg:mb-10 rounded-xl bg-gray-100">
         <Bio />
         <Education />
         <Experience />
       </div>
-      <div className="w-2/3 h-screen flex flex-col items-center rounded-xl bg-gray-100">
+      <div className="w-full lg:w-2/3 h-full flex flex-col items-center rounded-xl bg-gray-100">
         <Projects />
         <Links />
         {/* <PhotoGallery /> */}
