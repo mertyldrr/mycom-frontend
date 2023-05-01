@@ -20,7 +20,11 @@ const Links = () => {
         {logos &&
           logos.map((logo, index) => (
             <a href={logo.href} target="_blank" rel="noreferrer" key={index}>
-              <img className="w-8 h-8 lg:w-16 lg:h-16" src={logo.url} alt="" />
+              <img
+                className="w-8 h-8 lg:w-16 lg:h-16 hover:drop-shadow-xl transition duration-400 ease-in-out hover:-translate-y-1 hover:scale-110"
+                src={logo.url}
+                alt=""
+              />
             </a>
           ))}
       </div>
