@@ -1,17 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { S3Icons } from "../types";
+import { Technologies } from "./Technologies";
 
 export const Bio = () => {
-  const [icons, setIcons] = useState<S3Icons[]>();
   const [profilePicture, setProfilePictrue] = useState<S3Icons>();
-  const fetchPlLogos = async () => {
-    const res = await axios.get(
-      `${process.env.REACT_APP_BACKEND_BASE_URL}/plangicons`
-    );
-    setIcons(res.data);
-  };
-
   const fetchProfilePicture = async () => {
     const res = await axios.get(
       `${process.env.REACT_APP_BACKEND_BASE_URL}/photos`
@@ -39,7 +32,6 @@ export const Bio = () => {
 
   useEffect(() => {
     fetchProfilePicture();
-    fetchPlLogos();
   }, []);
   return (
     <div className="w-full flex flex-col justify-center items-center p-4 mb-10 rounded-xl bg-gray-100">
@@ -76,17 +68,7 @@ export const Bio = () => {
           </button>
         </div>
       </div>
-      <div className="w-full lg:w-4/5 flex flex-row justify-between items-center pt-12">
-        {icons &&
-          icons.map((icon, index) => (
-            <img
-              className="w-8 h-8 lg:w-16 lg:h-16 rounded lg:rounded-xl hover:drop-shadow-xl transition duration-400 ease-in-out hover:-translate-y-1 hover:scale-110"
-              src={icon.url}
-              alt=""
-              key={index}
-            />
-          ))}
-      </div>
+      <Technologies />
     </div>
   );
 };
