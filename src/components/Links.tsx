@@ -15,7 +15,7 @@ const Links = () => {
   }, []);
   return (
     <div className="w-full flex flex-col space-y-4 p-8 justify-center items-center mb-10">
-      <h1 className="font-mono font-bold text-basis lg:text-lg">Links</h1>
+      <h1 className="font-mono font-bold text-base lg:text-lg">Links</h1>
       <div className="w-full lg:w-2/3 flex flex-row justify-evenly items-center ">
         {logos &&
           logos.map((logo, index) => (
