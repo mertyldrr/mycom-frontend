@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { S3Icons } from "../types";
-import { Technologies } from "./Technologies";
 
 export const Bio = () => {
   const [profilePicture, setProfilePictrue] = useState<S3Icons>();
@@ -68,7 +67,6 @@ export const Bio = () => {
           </button>
         </div>
       </div>
-      <Technologies />
     </div>
   );
 };

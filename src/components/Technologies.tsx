@@ -16,7 +16,7 @@ export const Technologies = () => {
     fetchPlLogos();
   }, []);
   return (
-    <div className="w-full flex flex-col space-y-4 p-4 justify-center items-center pt-10">
+    <div className="w-full flex flex-col space-y-4 justify-center items-center mb-10">
       <h1 className="font-mono font-bold text-base lg:text-lg">Technologies</h1>
       <div className=" lg:w-4/5 flex flex-row justify-between items-center">
         {icons &&
