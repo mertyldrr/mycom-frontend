@@ -2,7 +2,7 @@ import { Bio } from "./Bio";
 import { Education } from "./Education";
 import { Experience } from "./Experience";
 import Links from "./Links";
-import { Projects } from "./Projects";
+import { Projects } from "./Projects/Projects";
 import { Technologies } from "./Technologies";
 
 const Homepage = () => {
