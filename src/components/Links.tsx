@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { S3LinkIcons } from "../types";
+import { S3LinkMedia } from "../types";
 
 const Links = () => {
-  const [logos, setLogos] = useState<S3LinkIcons[]>();
+  const [logos, setLogos] = useState<S3LinkMedia[]>();
   const fetchLogos = async () => {
     const res = await axios.get(
       `${process.env.REACT_APP_BACKEND_BASE_URL}/icons`

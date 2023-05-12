@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { S3Icons } from "../types";
+import { S3Media } from "../types";
 
 export const Bio = () => {
-  const [profilePicture, setProfilePictrue] = useState<S3Icons>();
+  const [profilePicture, setProfilePictrue] = useState<S3Media>();
   const fetchProfilePicture = async () => {
     const res = await axios.get(
       `${process.env.REACT_APP_BACKEND_BASE_URL}/photos`

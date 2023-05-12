@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { S3Icons } from "../types";
+import { S3Media } from "../types";
 
 export const Technologies = () => {
-  const [icons, setIcons] = useState<S3Icons[]>();
+  const [icons, setIcons] = useState<S3Media[]>();
 
   const fetchPlLogos = async () => {
     const res = await axios.get(
