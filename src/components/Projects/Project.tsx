@@ -6,9 +6,18 @@ type Props = {
   url: string;
   technologies: string[];
   description: string;
+  githubUrl: string;
+  projectUrl: string;
 };
 
-export const Project = ({ name, url, technologies, description }: Props) => {
+export const Project = ({
+  name,
+  url,
+  technologies,
+  description,
+  githubUrl,
+  projectUrl,
+}: Props) => {
   return (
     <div className="flex flex-col py-4">
       <div className="flex flex-row">
@@ -31,7 +40,7 @@ export const Project = ({ name, url, technologies, description }: Props) => {
           <div className="flex flex-row space-x-4">
             <a
               className="flex flex-row items-center text-blue-600 font-bold"
-              href={"https://mertyldrr.github.io/weather-app/"}
+              href={projectUrl}
               target="_blank"
               rel="noreferrer"
             >
@@ -40,7 +49,7 @@ export const Project = ({ name, url, technologies, description }: Props) => {
             </a>
             <a
               className="flex flex-row items-center text-blue-600 font-bold"
-              href={"https://github.com/mertyldrr/weather-app"}
+              href={githubUrl}
               target="_blank"
               rel="noreferrer"
             >
