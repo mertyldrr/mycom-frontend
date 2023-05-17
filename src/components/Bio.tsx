@@ -13,13 +13,11 @@ export const Bio = () => {
 
   const downloadPdf = () => {
     const pdfUrl = `${process.env.REACT_APP_SUBDOMAIN}/media/cv/mert_yildirir_cv.pdf`;
-    console.log(pdfUrl);
     axios({
       url: pdfUrl,
       method: "GET",
       responseType: "blob",
     }).then((response) => {
-      console.log(response);
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
