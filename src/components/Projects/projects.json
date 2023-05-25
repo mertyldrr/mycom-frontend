@@ -3,12 +3,16 @@
     "name": "Weather App",
     "url": "https://static.mertyildirir.com/media/projects/weather-app.png",
     "technologies": ["React", "Typescript", "Zustand"],
-    "description": "This weather app displays current weather(current temperature, condition, humidity and wind speed) in a desired city. It is possible to get 3-day hourly forecast by switching to \"Forecast\" tab. Hourly forecast is horizontally scrolable."
+    "description": "This weather app displays current weather(current temperature, condition, humidity and wind speed) in a desired city. It is possible to get 3-day hourly forecast by switching to \"Forecast\" tab. Hourly forecast is horizontally scrolable.",
+    "projectUrl": "https://mertyldrr.github.io/weather-app/",
+    "githubUrl": "https://github.com/mertyldrr/weather-app"
   },
   {
     "name": "LOTR",
     "url": "https://static.mertyildirir.com/media/projects/lotr-app.png",
     "technologies": ["React", "Typescript", "Zustand"],
-    "description": "This app display LOTR books, movies, characters and quotes in tabular form. You will see a random quote on start and it is possible to ask for a new one."
+    "description": "This app display LOTR books, movies, characters and quotes in tabular form. You will see a random quote on start and it is possible to ask for a new one.",
+    "projectUrl": "https://mertyldrr.github.io/lotr/",
+    "githubUrl": "https://github.com/mertyldrr/lotr"
   }
 ]
