@@ -1,7 +1,15 @@
 [
   {
+    "name": "Windows 11 in React",
+    "url": "https://static.mertyildirir.com/media/projects/win11-app.png",
+    "technologies": ["React", "Typescript", "Redux", "NestJS"],
+    "description": "Windows 11 in React. Currently users can interact and open the browser, vscode and pdf viewer. It's possible to drag windows. Also news widget on bottom-left, date and start menu(windows icon) is interactable. News are cached on my backend and updated every 6 hours to not exceed request limit of news API. Still in development.",
+    "projectUrl": "https://mertyildirir.com",
+    "githubUrl": "https://github.com/mertyldrr/win11"
+  },
+  {
     "name": "Weather App",
-    "url": "https://static.mertyildirir.com/media/projects/weather-app.png",
+    "url": "https://static.mertyildirir.com/media/projects/weather-app-2.png",
     "technologies": ["React", "Typescript", "Zustand"],
     "description": "This weather app displays current weather(current temperature, condition, humidity and wind speed) in a desired city. It is possible to get 3-day hourly forecast by switching to \"Forecast\" tab. Hourly forecast is horizontally scrolable.",
     "projectUrl": "https://mertyldrr.github.io/weather-app/",
@@ -11,7 +19,7 @@
     "name": "LOTR",
     "url": "https://static.mertyildirir.com/media/projects/lotr-app.png",
     "technologies": ["React", "Typescript", "Zustand"],
-    "description": "This app display LOTR books, movies, characters and quotes in tabular form. You will see a random quote on start and it is possible to ask for a new one.",
+    "description": "This app displays LOTR books, movies, characters and quotes in tabular form. You will see a random quote on start and it is possible to ask for a new one.",
     "projectUrl": "https://mertyldrr.github.io/lotr/",
     "githubUrl": "https://github.com/mertyldrr/lotr"
   }
