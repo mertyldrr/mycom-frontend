@@ -3,12 +3,12 @@ import projects from "./projects.json";
 
 export const Projects = () => {
   return (
-    <div className="flex flex-col space-y-4 p-8 justify-center items-center mb-10">
+    <div className="flex flex-col justify-center items-center my-8">
       <h1 className="font-mono font-bold text-base lg:text-lg">
         Personal Projects
       </h1>
-      <div className="font-mono text-xs lg:text-base">
-        {projects.map((project) => (
+      {projects.map((project) => (
+        <div className="font-mono text-xs lg:text-base">
           <Project
             name={project.name}
             url={project.url}
@@ -17,8 +17,8 @@ export const Projects = () => {
             projectUrl={project.projectUrl}
             githubUrl={project.githubUrl}
           />
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };

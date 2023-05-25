@@ -19,16 +19,16 @@ export const Project = ({
   projectUrl,
 }: Props) => {
   return (
-    <div className="flex flex-col py-4">
-      <div className="flex flex-row">
-        <div className="basis-5/12 pr-8">
+    <div className="flex flex-col py-6 border-b-2 border-slate-300 ">
+      <div className="flex flex-row p-8">
+        <div className="basis-1/2 pr-8">
           <img
             className="rounded-lg hover:drop-shadow-xl transition duration-400 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:scale-105"
             src={url}
             alt=""
           />
         </div>
-        <div className="flex flex-col basis-7/12 space-y-4">
+        <div className="flex flex-col basis-1/2 space-y-4">
           <h1 className="text-lg font-bold lg:text-xl">{name}</h1>
           <div className="flex flex-row flex-wrap">
             <p className="font-bold text-sm lg:text-base">
