@@ -5,7 +5,7 @@
     "technologies": ["React", "Typescript", "Redux", "NestJS"],
     "description": "Windows 11 in React. Currently users can interact and open the browser, vscode and pdf viewer. It's possible to drag windows. Also news widget on bottom-left, date and start menu(windows icon) is interactable. News are cached on my backend and updated every 6 hours to not exceed request limit of news API. Still in development.",
     "projectUrl": "https://mertyildirir.com",
-    "githubUrl": "https://github.com/mertyldrr/win11"
+    "githubUrl": "https://github.com/mertyldrr/win-11"
   },
   {
     "name": "Weather App",
