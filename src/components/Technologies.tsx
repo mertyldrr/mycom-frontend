@@ -18,7 +18,7 @@ export const Technologies = () => {
   return (
     <div className="w-full flex flex-col space-y-4 justify-center items-center mb-10">
       <h1 className="font-mono font-bold text-base lg:text-lg">Technologies</h1>
-      <div className="w-3/5 lg:w-4/5 flex flex-row justify-between items-center">
+      <div className="w-full md:w-4/5 flex flex-row justify-between items-center">
         {icons &&
           icons.map((icon, index) => (
             <img
