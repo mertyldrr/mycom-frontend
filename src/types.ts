@@ -5,4 +5,5 @@ export type S3LinkMedia = {
 
 export type S3Media = {
   url: string;
+  name: string;
 };
