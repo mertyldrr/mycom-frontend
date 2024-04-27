@@ -7,8 +7,8 @@ export const Projects = () => {
       <h1 className="font-mono font-bold text-base lg:text-lg">
         Personal Projects
       </h1>
-      {projects.map((project) => (
-        <div className="font-mono text-xs lg:text-base">
+      {projects.map((project, idx) => (
+        <div key={idx} className="font-mono text-xs lg:text-base">
           <Project
             name={project.name}
             url={project.url}
